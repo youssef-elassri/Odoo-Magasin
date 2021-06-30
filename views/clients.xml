@@ -7,10 +7,6 @@
             <tree string="Test Magasin">
                 <field name="name"/>
                 <field name="prenom"/>
-                <field name="date_naiss"/>
-                <field name="date_rej"/>
-                <field name="fonc"/>
-                <field name="salaire"/>
             </tree>
         </field>
     </record>
@@ -22,19 +18,11 @@
             <form string="Test Magasin">
                 <sheet>
                     <group>
-                        <group >
-                            <field name="name"/>
-                            <field name="prenom"/>
-                            <field name="date_naiss"/>
-                        </group>
-                        <group>
-                            <field name="date_rej"/>
-                             <field name="fonc"/>
-                            <field name="salaire"/>
-                        </group>
-                     <group colspan = "4">
+                        <group><field name="name"/></group>
+                        <group><field name="prenom"/></group>
+                         <group colspan = "4">
                             <field name="Orders"/>
-                     </group>
+                        </group>
                     </group>
                 </sheet>
             </form>
