@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <record id="magasin_tree" model="ir.ui.view" >
+        <field name="name">test_magasin.order.form</field>
+        <field name="model">test_magasin.order</field>
+        <field name="arch" type="xml">
+            <tree string="Test Magasin">
+                <field name="name"/>
+                <field name="demandeur"/>
+                <field name="approbateur"/>
+                <field name="date"/>
+                <field name="etat"/>
+            </tree>
+        </field>
+    </record>
+
+     <record id="magasin_view" model="ir.ui.view" >
+        <field name="name">test_magasin.order.form</field>
+        <field name="model">test_magasin.order</field>
+        <field name="arch" type="xml">
+            <form string="Test Magasin">
+                <sheet>
+                    <group>
+                        <group >
+                            <field name="name"/>
+                            <field name="demandeur"/>
+                            <field name="approbateur"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="etat"/>
+                        </group>
+                        <group colspan = "4">
+                            <field name="Order_lines"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+        <record id="action_magasin" model="ir.actions.act_window">
+            <field name="name">Orders</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">test_magasin.order</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                Ajouter un nouveau order ici
+                </p>
+            </field>
+    </record>
+
+
+
+</odoo>

@@ -1,0 +1,12 @@
+<odoo>
+
+    <menuitem name="Test Magasin" id="magasin_root" sequence="0"/>
+
+    <menuitem name="Orders" id="magasin_order"
+        parent="magasin_root" action="action_magasin"/>
+
+    <menuitem name="Clients" id="magasin_client"
+        parent="magasin_root" action="action_client"/>
+
+
+</odoo>

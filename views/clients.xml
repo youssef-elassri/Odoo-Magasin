@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <record id="clients_tree" model="ir.ui.view" >
+        <field name="name">test_magasin.client.form</field>
+        <field name="model">test_magasin.client</field>
+        <field name="arch" type="xml">
+            <tree string="Test Magasin">
+                <field name="name"/>
+                <field name="prenom"/>
+                <field name="date_naiss"/>
+                <field name="date_rej"/>
+                <field name="fonc"/>
+                <field name="salaire"/>
+            </tree>
+        </field>
+    </record>
+
+     <record id="magasin_view" model="ir.ui.view" >
+        <field name="name">test_magasin.client.form</field>
+        <field name="model">test_magasin.client</field>
+        <field name="arch" type="xml">
+            <form string="Test Magasin">
+                <sheet>
+                    <group>
+                        <group >
+                            <field name="name"/>
+                            <field name="prenom"/>
+                            <field name="date_naiss"/>
+                        </group>
+                        <group>
+                            <field name="date_rej"/>
+                             <field name="fonc"/>
+                            <field name="salaire"/>
+                        </group>
+                     <group colspan = "4">
+                            <field name="Orders"/>
+                     </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+        <record id="action_client" model="ir.actions.act_window">
+            <field name="name">Clients</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">test_magasin.client</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                Ajouter un nouveau client ici
+                </p>
+            </field>
+    </record>
+
+
+
+</odoo>

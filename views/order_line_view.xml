@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <record id="magasin_order_line_tree" model="ir.ui.view" >
+        <field name="name">test_magasin.order.tree</field>
+        <field name="model">test_magasin.order_line</field>
+        <field name="arch" type="xml">
+            <tree string="Test Magasin">
+                <field name="produit"/>
+                <field name="qte"/>
+                <field name="unite"/>
+            </tree>
+        </field>
+    </record>
+</odoo>
