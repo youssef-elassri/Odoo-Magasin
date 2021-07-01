@@ -4,10 +4,15 @@
         <field name="name">test_magasin.order.tree</field>
         <field name="model">test_magasin.order_line</field>
         <field name="arch" type="xml">
-            <tree string="Test Magasin">
+            <tree string="Test Magasin" editable="top">
                 <field name="produit"/>
                 <field name="qte"/>
                 <field name="unite"/>
+                <field name="prix"/>
+                <field name="subtot"/>
+                <field name="tva"/>
+                <field name="tot_taxe"/>
+
             </tree>
         </field>
     </record>

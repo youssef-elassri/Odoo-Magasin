@@ -8,5 +8,8 @@
     <menuitem name="Clients" id="magasin_client"
         parent="magasin_root" action="action_client"/>
 
+    <menuitem name="Employees" id="magasin_emp"
+        parent="magasin_root" action="action_employee"/>
+
 
 </odoo>

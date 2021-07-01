@@ -10,6 +10,9 @@
                 <field name="approbateur"/>
                 <field name="date"/>
                 <field name="etat"/>
+                <field name="total"/>
+                <field name="total_taxes"/>
+                <field name="net_payer"/>
             </tree>
         </field>
     </record>
@@ -33,6 +36,12 @@
                         <group colspan = "4">
                             <field name="Order_lines"/>
                         </group>
+                    </group>
+                    <group></group>
+                    <group>
+                            <field name="total"/>
+                            <field name="net_payer"/>
+                            <field name="total_taxes"/>
                     </group>
                 </sheet>
             </form>

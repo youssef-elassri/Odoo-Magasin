@@ -7,6 +7,7 @@
     'data': ['views/order_view.xml',
              'views/order_line_view.xml',
              'views/clients.xml',
+             'views/employees.xml',
              'views/menus.xml',
              'security/ir.model.access.csv'],
     'demo': [],
