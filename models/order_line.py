@@ -3,9 +3,11 @@ from odoo import fields, models, api
 class Order_line(models.Model):
     _name = 'test_magasin.order_line'
 
-    produit = fields.Char('Produit')
+    produit = fields.Many2one(
+        'test_magasin.produit', string='Produit',
+        index=True, ondelete='cascade', required=True)
     qte = fields.Integer('qte')
-    prix = fields.Float('Prix Unitaire')
+    prix = fields.Float('Prix Unitaire', compute='_cmp_prix')
     subtot = fields.Float('Sub Total', compute='_cmp_subtot')
     tva = fields.Selection([
         ('2.5', 2.5)
@@ -19,6 +21,11 @@ class Order_line(models.Model):
 
 
     @api.model
+    def _cmp_prix(self):
+        for rec in self:
+            if rec:
+                self.prix = rec.produit.prix
+
     def _cmp_subtot(record):
         for rec in record:
             if rec:

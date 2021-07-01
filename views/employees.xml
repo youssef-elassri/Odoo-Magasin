@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
      <record id="emp_tree" model="ir.ui.view" >
-        <field name="name">test_magasin.employees.form</field>
+        <field name="name">test_magasin.employees.tree</field>
         <field name="model">test_magasin.employees</field>
         <field name="arch" type="xml">
             <tree string="Test Magasin">
@@ -32,7 +32,7 @@
                             <field name="post"/>
                             <field name="salaire"/>
                         </group>
-                        <group>
+                        <group colspan="4">
                          <field name="Orders"/>
                         </group>
                     </group>

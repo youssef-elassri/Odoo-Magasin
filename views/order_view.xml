@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
      <record id="magasin_tree" model="ir.ui.view" >
-        <field name="name">test_magasin.order.form</field>
+        <field name="name">test_magasin.order.tree</field>
         <field name="model">test_magasin.order</field>
         <field name="arch" type="xml">
             <tree string="Test Magasin">

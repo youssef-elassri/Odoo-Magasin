@@ -11,5 +11,8 @@
     <menuitem name="Employees" id="magasin_emp"
         parent="magasin_root" action="action_employee"/>
 
+    <menuitem name="Produits" id="magasin_prod"
+        parent="magasin_root" action="action_produit"/>
+
 
 </odoo>

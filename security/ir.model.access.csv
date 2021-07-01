@@ -3,3 +3,4 @@ access_orders,access.orders,model_test_magasin_order,,1,1,1,1
 access_order_lines,access.order.lines,model_test_magasin_order_line,,1,1,1,1
 access_client,access.clients,model_test_magasin_client,,1,1,1,1
 access_emp,access.employees,model_test_magasin_employees,,1,1,1,1
+access_prod,access.produit,model_test_magasin_produit,,1,1,1,1

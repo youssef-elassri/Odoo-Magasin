@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <record id="emp_tree" model="ir.ui.view" >
+        <field name="name">test_magasin.produit.form</field>
+        <field name="model">test_magasin.produit</field>
+        <field name="arch" type="xml">
+            <tree string="Test Magasin">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="cost"/>
+                <field name="prix"/>
+            </tree>
+        </field>
+    </record>
+
+     <record id="magasin_view" model="ir.ui.view" >
+        <field name="name">test_magasin.produit.form</field>
+        <field name="model">test_magasin.produit</field>
+        <field name="arch" type="xml">
+            <form string="Test Magasin">
+                <sheet>
+                    <group>
+                        <group >
+                            <field name="name"/>
+                            <field name="code"/>
+                        </group>
+                        <group>
+                            <field name="cost"/>
+                            <field name="prix"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+        <record id="action_produit" model="ir.actions.act_window">
+            <field name="name">Produit</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">test_magasin.produit</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                Ajouter un nouveau Produit ici
+                </p>
+            </field>
+    </record>
+
+
+
+</odoo>

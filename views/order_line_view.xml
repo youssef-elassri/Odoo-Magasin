@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
      <record id="magasin_order_line_tree" model="ir.ui.view" >
-        <field name="name">test_magasin.order.tree</field>
+        <field name="name">test_magasin.order_line.tree</field>
         <field name="model">test_magasin.order_line</field>
         <field name="arch" type="xml">
-            <tree string="Test Magasin" editable="top">
+            <tree string="Test Magasin" editable="bottom">
                 <field name="produit"/>
                 <field name="qte"/>
                 <field name="unite"/>
@@ -12,7 +12,6 @@
                 <field name="subtot"/>
                 <field name="tva"/>
                 <field name="tot_taxe"/>
-
             </tree>
         </field>
     </record>
