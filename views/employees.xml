@@ -14,7 +14,6 @@
             </tree>
         </field>
     </record>
-
      <record id="magasin_view" model="ir.ui.view" >
         <field name="name">test_magasin.employees.form</field>
         <field name="model">test_magasin.employees</field>
@@ -40,9 +39,7 @@
             </form>
         </field>
     </record>
-
-
-        <record id="action_employee" model="ir.actions.act_window">
+    <record id="action_employee" model="ir.actions.act_window">
             <field name="name">Employees</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">test_magasin.employees</field>

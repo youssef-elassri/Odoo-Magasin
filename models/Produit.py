@@ -3,7 +3,7 @@ from odoo import  fields, models, api
 class Produit(models.Model):
 
     _name='test_magasin.produit'
-
+    img = fields.Binary('Product image')
     name = fields.Char('Product Name')
     code = fields.Char('Product Code')
     cost = fields.Float('Cost')

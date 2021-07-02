@@ -5,14 +5,16 @@
     <menuitem name="Orders" id="magasin_order"
         parent="magasin_root" action="action_magasin"/>
 
+    <menuitem name="Produits" id="magasin_prod"
+        parent="magasin_root" action="action_produit"/>
+    
     <menuitem name="Clients" id="magasin_client"
         parent="magasin_root" action="action_client"/>
 
     <menuitem name="Employees" id="magasin_emp"
         parent="magasin_root" action="action_employee"/>
 
-    <menuitem name="Produits" id="magasin_prod"
-        parent="magasin_root" action="action_produit"/>
+
 
 
 </odoo>
